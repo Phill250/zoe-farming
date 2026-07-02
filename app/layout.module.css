@@ -1,0 +1,138 @@
+/* app/layout.module.css */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Common Header Banner across inner pages */
+.pageHeader {
+  background-color: #4CAF50;
+  color: white;
+  padding: 2.5rem 1rem;
+  text-align: center;
+}
+
+.pageHeader h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+/* Universal Green & White Navbar */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 12px 24px;
+  border-bottom: 3px solid #4CAF50; /* Added green line accent */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  height: 60px;
+  width: 100px;
+  border-radius: 60px;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin-right: 40px;
+  padding: 0px;
+}
+
+.navLink {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navLink:hover {
+  color: #eef4ee;
+  background-color: #4CAF50;
+  padding: 15px 7px;
+  border-radius: 8px;
+}
+
+/* Content Container Card */
+.mainContainer {
+  padding: 40px 20px;
+  max-width: 1000px;
+  width: 100%;
+  margin: 20px auto;
+  background-color: rgb(246, 248, 247);
+  border-radius: 8px;
+  box-sizing: border-box;
+  flex: 1;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+/* Green Footer */
+.footer {
+  background-color: #4CAF50; /* Swapped dark grey to accent green */
+  color: white;
+  text-align: center;
+  padding: 1.2rem;
+  margin-top: auto;
+}
+
+/* Projects Grid Layout */
+.projectGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 25px;
+  margin-top: 50px;
+  
+}
+
+/* Card Container */
+.projectCard {
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-top: 4px solid #4CAF50; /* Green accent bar on top */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.projectCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Project Image Box */
+.cardImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Text Padding inside Cards */
+.cardContent {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.cardContent h3 {
+  color: #4CAF50;
+  margin: 0 0 10px 0;
+  font-size: 1.25rem;
+}
+
+.cardContent p {
+  margin: 0;
+  line-height: 1.5;
+  font-size: 0.95rem;
+  color: #555;
+}
+
