@@ -7,7 +7,7 @@
 
 /* Common Header Banner across inner pages */
 .pageHeader {
-  background-color: #4CAF50;
+  background-color: #214d24;
   color: white;
   padding: 2.5rem 1rem;
   text-align: center;
@@ -25,7 +25,7 @@
   justify-content: space-between;
   background-color: white;
   padding: 12px 24px;
-  border-bottom: 3px solid #4CAF50; /* Added green line accent */
+  border-bottom: 3px solid #214d24; /* Added green line accent */
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -54,7 +54,7 @@
 
 .navLink:hover {
   color: #eef4ee;
-  background-color: #4CAF50;
+  background-color: #214d24;
   padding: 15px 7px;
   border-radius: 8px;
 }
@@ -74,7 +74,7 @@
 
 /* Green Footer */
 .footer {
-  background-color: #4CAF50; /* Swapped dark grey to accent green */
+  background-color: #214d24; /* Swapped dark grey to accent green */
   color: white;
   text-align: center;
   padding: 1.2rem;
@@ -94,7 +94,7 @@
 .projectCard {
   background-color: white;
   border: 1px solid #e0e0e0;
-  border-top: 4px solid #4CAF50; /* Green accent bar on top */
+  border-top: 4px solid #214d24; /* Green accent bar on top */
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
@@ -124,7 +124,7 @@
 }
 
 .cardContent h3 {
-  color: #4CAF50;
+  color: #214d24;
   margin: 0 0 10px 0;
   font-size: 1.25rem;
 }

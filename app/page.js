@@ -57,7 +57,7 @@ export default function Home() {
         className={styles.mainContainer} 
         style={{ 
           textAlign: 'center', 
-          backgroundColor: '#4CAF50', 
+          backgroundColor: '#214d24', 
           color: 'white',
           padding: '60px 40px',
           borderRadius: '16px',
