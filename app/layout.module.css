@@ -1,4 +1,4 @@
-/* app/layout.module.css */
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -15,7 +15,30 @@
 
 .pageHeader h1 {
   margin: 0;
-  font-size: 2.5rem;
+  margin: 0 0 15px 0; 
+  font-Size: 3.5rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  line-height: 1.2;
+}
+
+.pageHeader p{
+    font-size: 1.35rem;
+    margin: 0; 
+    font-weight: 300;
+    line-height: 1.6;
+    color: #e8f5e9;
+}
+/* Content Container Card */
+.mainContainer {
+  padding: 40px 20px;
+  
+  width: 100%;
+  margin:  auto;
+  background-color: rgb(246, 248, 247);
+  box-sizing: border-box;
+  flex: 1;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
 }
 
 /* Universal Green & White Navbar */
@@ -25,52 +48,94 @@
   justify-content: space-between;
   background-color: white;
   padding: 12px 24px;
-  border-bottom: 3px solid #214d24; /* Added green line accent */
+  border-bottom: 3px solid #214d24; 
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
 .logo {
-  height: 60px;
-  width: 100px;
+  height: 100px;
+  width: 160px;
   border-radius: 60px;
 }
 
 .navList {
-  list-style: none;
-  display: flex;
-  gap: 30px;
-  margin-right: 40px;
-  padding: 0px;
-}
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin-right: 40px;
+    padding: 0px;
+    align-items: center;
+  }
+  
+  
+  .navLink {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.95rem; /* Slightly smaller text size keeps all tabs cleanly on a single line */
+    transition: color 0.3s;
+  }
+  
+  /* Combine Hover and Active states to share the exact same green style */
+  .navLink:hover {
+    color: #246e29;
+    border-color: #246e29; /* Turns the bottom line green */
+  }
+  
+  .activeLink {
+    color: #246e29;
+    border-bottom-color: #246e29; /* Turns the bottom line green for the active page */
+   
+  }
+  
+  /* Container layout for Vision, Mission, Values */
+  .pillarsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 60px;
+    margin: 40px auto 0 auto;
+    max-width: 1070px;
+    width: 100%;
 
-.navLink {
-  color: #333;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s;
-}
+    
+  }
+  
+  /* Individual card elements inside the green container */
+  .pillarCard {
+    background: rgba(255, 255, 255, 0.08); /* Sophisticated subtle white tint */
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    padding: 30px 20px;
+    transition: all 0.3s ease;
+    
+  }
+  
+  .pillarCard:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  
+  .pillarTitle {
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: 700;
+    
+  }
+  
+  .pillarText {
+    color: #e8f5e9;
+    font-size: 0.98rem;
+    line-height: 1.8;
+    list-style: none;
+  }
+  
 
-.navLink:hover {
-  color: #eef4ee;
-  background-color: #214d24;
-  padding: 15px 7px;
-  border-radius: 8px;
-}
-
-/* Content Container Card */
-.mainContainer {
-  padding: 40px 20px;
-  max-width: 1000px;
-  width: 100%;
-  margin: 20px auto;
-  background-color: rgb(246, 248, 247);
-  border-radius: 8px;
-  box-sizing: border-box;
-  flex: 1;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-}
 
 /* Green Footer */
 .footer {
@@ -81,58 +146,6 @@
   margin-top: auto;
 }
 
-/* Projects Grid Layout */
-.projectGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 25px;
-  margin-top: 50px;
-  
-}
 
-/* Card Container */
-.projectCard {
-  background-color: white;
-  border: 1px solid #e0e0e0;
-  border-top: 4px solid #214d24; /* Green accent bar on top */
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s, box-shadow 0.2s;
-  display: flex;
-  flex-direction: column;
-}
 
-.projectCard:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-}
-
-/* Project Image Box */
-.cardImage {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-/* Text Padding inside Cards */
-.cardContent {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-}
-
-.cardContent h3 {
-  color: #214d24;
-  margin: 0 0 10px 0;
-  font-size: 1.25rem;
-}
-
-.cardContent p {
-  margin: 0;
-  line-height: 1.5;
-  font-size: 0.95rem;
-  color: #555;
-}
 
